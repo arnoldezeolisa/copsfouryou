@@ -10,7 +10,6 @@ const path = require('path');
 //app.set("view engine","ejs");
 app.use(bodyParser.urlencoded({extended:true}));
 app.use( bodyParser.json({limit: '50mb'}) );
-require('./config/passport')(passport);
 app.use(passport.initialize());
 app.use(passport.session());
 
