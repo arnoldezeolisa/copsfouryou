@@ -4,8 +4,9 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';
-import { HomeComponent } from './components/home/home.component';
 import {SignInService} from './components/sign-in/sign-in.service';
+import {AppRoutingModule} from './app-routing.module';
+import {HomeComponent} from './components/home/home.component';
 
 
 
@@ -13,14 +14,52 @@ import {SignInService} from './components/sign-in/sign-in.service';
 
 @NgModule({
   declarations: [
-    AppComponent,    SignUpComponent,
+    AppComponent,
+    SignUpComponent,
     SignInComponent,
-    HomeComponent,
+    HomeComponent
+
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
+  ],
+  exports: [
+    AppRoutingModule,
   ],
   providers: [SignInService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+/*
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import {HttpClientModule} from '@angular/common/http';
+
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { SharedModule } from './shared/shared.module';
+import { ShoppingListModule } from './shopping-list/shopping-list.module';
+import { AuthModule } from './auth/auth.module';
+import { CoreModule } from './core/core.module';
+
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    AppRoutingModule,
+    SharedModule,
+    ShoppingListModule,
+    AuthModule,
+    CoreModule
+  ],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+
+ */
