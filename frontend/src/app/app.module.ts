@@ -28,7 +28,6 @@ import { HeaderComponent } from './header/header.component';
   ],
   exports: [
     AppRoutingModule,
-    HeaderComponent
   ],
   providers: [SignInService],
   bootstrap: [AppComponent]
