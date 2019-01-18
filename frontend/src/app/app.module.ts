@@ -8,6 +8,9 @@ import {SignInService} from './components/sign-in/sign-in.service';
 import {AppRoutingModule} from './app-routing.module';
 import {HomeComponent} from './components/home/home.component';
 import { HeaderComponent } from './header/header.component';
+import {SignUpService} from './components/sign-up/sign-up.service';
+import { HttpClientModule} from '@angular/common/http';
+import {HttpModule} from '@angular/http';
 
 
 
@@ -24,12 +27,15 @@ import { HeaderComponent } from './header/header.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    HttpModule
   ],
   exports: [
     AppRoutingModule,
   ],
-  providers: [SignInService],
+  providers: [SignInService,
+              SignUpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
