@@ -5,6 +5,7 @@ var jwt = require("jsonwebtoken");
 const cors = require('cors');
 const passport = require('passport');
 const path = require('path');
+const db = require("./config/db");
 
 
 //app.set("view engine","ejs");
@@ -26,7 +27,13 @@ app.use(express.static(path.join(__dirname,'public')));
 
 
 // DATABASE CONNECTION, DB setup is in config folder
-
+db.connect(function(error){
+    if(error){
+        console.log('error connecting db: '+error)
+    }else{
+        console.log('Datebase Connected');
+    }
+});
 
 
 
@@ -44,6 +51,73 @@ app.get('/',function(req,res){
         }
     });
 });
+
+
+app.post("/register",function(req,res,next){
+
+        let newUser = {
+            username:req.body.username,
+            password:req.body.password
+        }
+        console.log(newUser)
+        
+        //PASSWORD ENCRYPT AND DATABASE INSERT--IN config/db.js
+        
+        db.passwordHash(newUser,(err)=>{
+            if(err){
+                console.log('hash did not work! '+err)
+                res.json({success: false,msg:"Failed to register"})
+            }else{
+                console.log('hash did work!')
+                res.json({success:true,msg:"user registered"})    
+            }
+        });
+    });
+
+
+   app.post("/authenticate",function(req,res,next){
+
+        const username = req.body.username;
+        const password = req.body.password;
+        
+        db.getUserByUsername(username, (err,user) => {
+            
+            if(err) {
+                console.log(err)
+                return res.json({success:false,msg:"User not found."})
+            };
+            if(!user[0]){
+                return res.json({success:false,msg:"User not found."});
+            }else{
+            
+            db.comparePassword(password, user[0].password,(err, isMatch)=>{
+                if(err) throw err;
+                if(isMatch){
+                    const token = jwt.sign({data: user},'cops4you',{
+                        expiresIn:604800 //1 week
+                    });
+                    res.json({
+                        success:true,
+                        token: 'JWT '+token,
+                        user:{
+                            account_id:user[0].id,
+                            name:user[0].name,
+                            username:user[0].username,
+                            email:user[0].email,
+                            main_account:user[0].main_account
+                        }
+                    })
+                }else{
+                    return res.json({success:false,msg:'Username and password do not match.'})
+                }
+            
+            })
+        }
+        })
+        
+        })
+
+
 
 app.get('*', function (req, res) {
     res.sendFile(__dirname + '/public'); // load the single view file (angular will handle the page changes on the front-end)
