@@ -1,31 +1,233 @@
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a routerLink="/" class="navbar-brand">Cops4You</a>
-    </div>
+<div class="topbar">
+  <div class="container d-flex">
 
-    <div class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li routerLinkActive="active"><a href="/inbox">Messages</a></li>
-        <li routerLinkActive="active"><a routerLink="/profile">View Profile</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-          <li><a href="/signup">Register</a></li>
-          <li><a href="/signin">Login</a></li>
+    <!-- service contact -->
+    <nav class="nav d-none d-md-flex"> <!-- hidden on xs -->
+      <a class="nav-link pl-0" href="javascript:void(0)"><i data-feather="phone"></i>+1 (630) 487 8186</a>
+      <a class="nav-link" href="javascript:void(0)"><i data-feather="mail"></i> support@cops4you.com</a>
+    </nav>
+
+    <!-- social media -->
+    <nav class="nav">
+      <a class="nav-link pr-2 pl-0" href="javascript:void(0)"><i data-feather="facebook"></i></a>
+      <a class="nav-link px-2" href="javascript:void(0)"><i data-feather="twitter"></i></a>
+      <a class="nav-link px-2" href="javascript:void(0)"><i data-feather="instagram"></i></a>
+    </nav>
+
+    <!-- language -->
+    <nav class="nav nav-lang ml-auto"> <!-- push it to the right -->
+      <a class="nav-link active" href="javascript:void(0)">EN</a>
+      <a class="nav-link pipe">|</a>
+      <a class="nav-link" href="javascript:void(0)">ESP</a>
+    </nav>
+
+    <!-- User dropdown -->
+    <ul class="nav">
+      <li class="nav-item dropdown dropdown-hover">
+        <a class="nav-link dropdown-toggle pr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          <i data-feather="user"></i> Hi, John <i data-feather="chevron-down"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right">
+          <div class="media p-1 align-items-center mb-2">
+            <img src="../img/user/user.svg" alt="user" class="img-thumbnail rounded-circle mr-2 size50x50">
+            <div class="media-body">
+              <strong>John Thor</strong>
+              <div class="small counter">1113 points</div>
+            </div>
+          </div>
+          <a href="account-orders.html" class="dropdown-item has-icon"><i data-feather="shopping-cart"></i>My Orders</a>
+          <a href="account-wishlist.html" class="dropdown-item has-icon has-badge"><i data-feather="heart"></i>Wishlist <span class="badge rounded badge-primary">2</span></a>
+          <a href="account-profile.html" class="dropdown-item has-icon"><i data-feather="settings"></i>Account Setting</a>
+          <div class="dropdown-divider"></div>
+          <a href="account-login.html" class="dropdown-item has-icon text-danger"><i data-feather="log-out"></i>Logout</a>
+        </div>
+      </li>
+    </ul>
+    <!-- /User dropdown -->
+
+  </div><!-- /.container -->
+</div>
+<!-- /Top bar -->
 
 
-        <li><a
-          style="cursor: pointer;"
-          >Logout</a></li>
+<!--Header -->
+<header>
+  <div class="container">
 
-        <li class="dropdown" >
-          <a style="cursor: pointer;" class="dropdown-toggle" role="button">Manage <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a style="cursor: pointer;" >Save Data</a></li>
-            <li><a style="cursor: pointer;" >Fetch Data</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <!-- Sidebar toggler -->
+    <a class="nav-link nav-icon ml-ni nav-toggler mr-3 d-flex d-lg-none" href="#" data-toggle="modal" data-target="#menuModal"><i data-feather="menu"></i></a>
+
+    <!-- Logo -->
+    <a class="nav-link nav-logo" href="index.html"><img height="100px" src="https://images.vexels.com/media/users/3/158465/isolated/lists/4771d7db1acb66c64f9b4cdb594028b9-car-police-illustration.png" alt="Mimity"> </a><strong>Cops4you</strong>
+
+    <!-- Main navigation -->
+    <ul class="nav nav-main ml-auto d-none d-lg-flex"> <!-- hidden on md -->
+      <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+      <li class="nav-item dropdown dropdown-hover">
+        <a class="nav-link dropdown-toggle forwardable" data-toggle="dropdown" href="shop-categories.html" role="button" aria-haspopup="true" aria-expanded="false">
+          Find Freelancers <i data-feather="chevron-down"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="shop-categories.html">Search Cops</a>
+          <a class="dropdown-item" href="shop-grid.html">Make a Job Post</a>
+          <a class="dropdown-item" href="shop-list.html">My Job Posts</a>
+          <a class="dropdown-item" href="shop-list.html">My Messages</a>
+
+        </div>
+      </li>
+      <li class="nav-item dropdown dropdown-hover dropdown-mega">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          Find Jobs <i data-feather="chevron-down"></i>
+        </a>
+        <div class="dropdown-menu">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="list-group list-group-flush list-group-no-border list-group-sm">
+                <a href="shop-grid.html" class="list-group-item list-group-item-action"><strong>Browse by Job Type</strong></a>
+                <a href="shop-grid.html" class="list-group-item list-group-item-action">Bar/Restaurant Jobs</a>
+                <a href="shop-grid.html" class="list-group-item list-group-item-action">Event Security Jobs</a>
+                <a href="shop-grid.html" class="list-group-item list-group-item-action">Community/Neighborhood Jobs</a>
+                <a href="shop-grid.html" class="list-group-item list-group-item-action">Personal Detail Jobs</a>
+                <a href="shop-grid.html" class="list-group-item list-group-item-action">Office/Business Jobs</a>
+                <a href="shop-grid.html" class="list-group-item list-group-item-action">Bank/Money Transport Jobs</a>
+                <a href="shop-grid.html" class="list-group-item list-group-item-action">Transport Jobs</a>
+                <a href="shop-grid.html" class="list-group-item list-group-item-action">Other Security Jobs</a>
+              </div>
+            </div>
+            <div class="col-lg-3 border-left">
+              <div class="list-group list-group-flush list-group-no-border list-group-sm">
+                <a href="shop-grid.html" class="list-group-item list-group-item-action"><strong>Browse by Area</strong></a>
+                <a href="shop-grid.html" class="list-group-item list-group-item-action">Chicago</a>
+                <a href="shop-grid.html" class="list-group-item list-group-item-action">New York</a>
+                <a href="shop-grid.html" class="list-group-item list-group-item-action">Los Angeles</a>
+                <a href="shop-grid.html" class="list-group-item list-group-item-action">San Francisco</a>
+                <a href="shop-grid.html" class="list-group-item list-group-item-action">Houston</a>
+                <a href="shop-grid.html" class="list-group-item list-group-item-action">Phoenix</a>
+                <a href="shop-grid.html" class="list-group-item list-group-item-action">Philadelphia</a>
+                <a href="shop-grid.html" class="list-group-item list-group-item-action">San Antonio</a>
+
+
+
+ 
+              </div>
+            </div>
+            <div class="col-lg-3 border-left">
+              <div class="list-group list-group-flush list-group-no-border list-group-sm">
+                <a href="shop-grid.html" class="list-group-item list-group-item-action"><strong>Options</strong></a>
+                <a href="shop-grid.html" class="list-group-item list-group-item-action">Sign-up</a>
+                <a href="shop-grid.html" class="list-group-item list-group-item-action">Login</a>
+                <a href="shop-grid.html" class="list-group-item list-group-item-action">My Jobs</a>
+                <a href="shop-grid.html" class="list-group-item list-group-item-action">How it Works</a>
+ 
+              </div>
+            </div>
+            <div class="col-lg-3 border-left roboto-condensed">
+              <div class="card text-white zoom-hover">
+                <div data-cover="../img/categories/6.jpeg" data-height="260px"></div>
+                <div class="card-img-overlay card-img-overlay-transparent d-flex justify-content-center align-items-center flex-column">
+                  <h2 class="card-title text-center">New Women's Fashion</h2>
+                  <h5>See what's new</h5>
+                  <a href="shop-grid.html" class="btn btn-danger rounded-pill">Shop Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="nav-item dropdown dropdown-hover">
+        <a class="nav-link dropdown-toggle forwardable" data-toggle="dropdown" href="account-profile.html" role="button" aria-haspopup="true" aria-expanded="false">
+          Account <i data-feather="chevron-down"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="account-login.html">Login / Register</a>
+          <a class="dropdown-item" href="account-profile.html">Profile Page</a>
+          <a class="dropdown-item" href="account-orders.html">Orders List</a>
+          <a class="dropdown-item" href="account-wishlist.html">Wishlist</a>
+          <a class="dropdown-item" href="account-address.html">Address</a>
+        </div>
+      </li>
+   
+    </ul>
+    <!-- /Main navigation -->
+
+    <!-- Search form -->
+    <form class="form-inline form-search ml-auto mr-0 mr-sm-1 d-none d-sm-flex">
+      <div class="input-group input-group-search">
+        <div class="input-group-prepend">
+          <button class="btn btn-light d-flex d-sm-none search-toggle" type="button"><i data-feather="chevron-left"></i></button>
+        </div>
+        <input type="text" class="form-control border-0 bg-light input-search" placeholder="Search...">
+        <div class="input-group-append">
+          <button class="btn btn-light" type="submit"><i data-feather="search"></i></button>
+        </div>
+      </div>
+    </form>
+    <!-- /Search form -->
+
+    <ul class="nav ml-auto ml-sm-0">
+      <!-- Search form toggler -->
+      <li class="nav-item d-block d-sm-none ml-2 ml-lg-0"><a class="nav-link nav-icon search-toggle" href="#"><i data-feather="search"></i></a></li>
+
+      <!-- Cart dropdown -->
+      <li class="nav-item dropdown dropdown-hover dropdown-cart">
+        <a class="nav-link nav-icon mr-nis dropdown-toggle forwardable ml-2" data-toggle="dropdown" href="cart.html" role="button" aria-haspopup="true" aria-expanded="false">
+          <i data-feather="shopping-cart"></i>
+          <span class="badge badge-primary">4</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right">
+          
+          <div class="media">
+            <a href="shop-single.html"><img src="../img/products/1_small.jpg" width="50" height="50" alt="Hanes Hooded Sweatshirt"></a>
+            <div class="media-body">
+              <a href="shop-single.html" title="Hanes Hooded Sweatshirt">Hanes Hooded Sweatshirt</a>
+              <span class="qty">1</span> x <span class="price">$18.56</span>
+              <button type="button" class="close" aria-label="Close"><i data-feather="x-circle"></i></button>
+            </div>
+          </div>
+          
+          <div class="media">
+            <a href="shop-single.html"><img src="../img/products/2_small.jpg" width="50" height="50" alt="The Flash Logo T-Shirt"></a>
+            <div class="media-body">
+              <a href="shop-single.html" title="The Flash Logo T-Shirt">The Flash Logo T-Shirt</a>
+              <span class="qty">1</span> x <span class="price">$16.64</span>
+              <button type="button" class="close" aria-label="Close"><i data-feather="x-circle"></i></button>
+            </div>
+          </div>
+          
+          <div class="media">
+            <a href="shop-single.html"><img src="../img/products/3_small.jpg" width="50" height="50" alt="Open Front Cropped Cardigans"></a>
+            <div class="media-body">
+              <a href="shop-single.html" title="Open Front Cropped Cardigans">Open Front Cropped Cardigans</a>
+              <span class="qty">1</span> x <span class="price">$15.20</span>
+              <button type="button" class="close" aria-label="Close"><i data-feather="x-circle"></i></button>
+            </div>
+          </div>
+          
+          <div class="media">
+            <a href="shop-single.html"><img src="../img/products/4_small.jpg" width="50" height="50" alt="Cotton Fleece Long Hoodie"></a>
+            <div class="media-body">
+              <a href="shop-single.html" title="Cotton Fleece Long Hoodie">Cotton Fleece Long Hoodie</a>
+              <span class="qty">1</span> x <span class="price">$85.00</span>
+              <button type="button" class="close" aria-label="Close"><i data-feather="x-circle"></i></button>
+            </div>
+          </div>
+          
+          <div class="d-flex justify-content-between pb-3 pt-2">
+            <span>Total</span>
+            <strong>$135.40</strong>
+          </div>
+          <div class="d-flex justify-content-between pb-2">
+            <div class="w-100 mr-1">
+              <a href="cart.html" class="btn btn-block rounded-pill btn-secondary">View Cart</a>
+            </div>
+            <div class="w-100 ml-1">
+              <a href="shipping.html" class="btn btn-block rounded-pill btn-primary">Checkout</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <!-- /Cart dropdown -->
+    </ul>
+
+  </div><!-- /.container -->
+</header>
