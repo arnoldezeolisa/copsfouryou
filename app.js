@@ -54,9 +54,9 @@ app.get('/',function(req,res){
 
 
 app.post("/register",function(req,res,next){
-
+        console.log(req.body.email)
         let newUser = {
-            username:req.body.username,
+            username:req.body.email,
             password:req.body.password
         }
         console.log(newUser)
@@ -142,7 +142,7 @@ app.get('*', function (req, res) {
 
 
 
-process.env.PORT = 3000;//process.env.PORT || 8080;
+process.env.PORT = 8080;//process.env.PORT || 8080;
 
 app.listen(process.env.PORT,process.env.IP,function(){
     console.log("The Cops4You server has started on port " + process.env.PORT);

@@ -9,7 +9,7 @@ export class SignUpService {
               private http: HttpClient) {
   }
 
-  SignupUser(email: string, password: string) {
+  SignupUser(email: any, password: any) {
     var user = {email: email, password: password};
 
       let headers = new HttpHeaders();
@@ -17,7 +17,8 @@ export class SignUpService {
       console.log("user data in auth module " + JSON.stringify(user) )
 
 
-      return this.http.post('http://localhost:3000/register', user, {headers: headers})
+      return this.http.post('http://localhost:8080/register',
+        user, {headers: headers})
         .pipe(map((res) => res))
       // .subscribe((result => result =result.json()));
 

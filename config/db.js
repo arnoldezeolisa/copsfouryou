@@ -28,7 +28,7 @@ module.exports.passwordHash = function(newUser,callback){
             console.log("the hash"+hash)
             newUser.password = hash;
             
-            let sql = "INSERT INTO user_table (userName,password) VALUES('"+newUser.username+"','"+newUser.password+"')'";
+            let sql = "INSERT INTO user_table (userName,userPass) VALUES('"+newUser.username+"','"+newUser.password+"')";
             console.log(sql);
             db.query(sql,function(err,result){
                 if(err) {
