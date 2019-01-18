@@ -11,6 +11,7 @@ import { HeaderComponent } from './header/header.component';
 import {SignUpService} from './components/sign-up/sign-up.service';
 import { HttpClientModule} from '@angular/common/http';
 import {HttpModule} from '@angular/http';
+import {FormsModule} from '@angular/forms';
 
 
 
@@ -29,7 +30,8 @@ import {HttpModule} from '@angular/http';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    HttpModule
+    HttpModule,
+    FormsModule
   ],
   exports: [
     AppRoutingModule,

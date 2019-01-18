@@ -8,16 +8,20 @@ import {SignUpService} from './sign-up.service';
   styleUrls: ['./sign-up.component.css']
 })
 export class SignUpComponent implements OnInit {
-
+  public email: string;
+  public password: string;
   constructor(private signupService: SignUpService) { }
 
   ngOnInit() {
 
   }
-  onRegister(form: NgForm) {
-    const email = form.value.email;
-    const password = form.value.password;
-    this.signupService.SignupUser(email, password);
+  onRegister() {
+    this.signupService.SignupUser(this.email, this.password)
+      .subscribe(
+        (data) => {
+          console.log(data);
+        }
+      );
   }
 
 }
