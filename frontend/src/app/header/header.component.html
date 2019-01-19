@@ -117,7 +117,7 @@
                 <a routerLink="/" class="list-group-item list-group-item-action"><strong>Options</strong></a>
                 <a routerLink="/signup" class="list-group-item list-group-item-action">register</a>
                 <a routerLink="/signin" class="list-group-item list-group-item-action">Login</a>
-                <ng-template [ngIf]="!signupService.isSuccess()">
+                <ng-template [ngIf]="signupService.isSuccess()">
                 <a routerLink="/" class="list-group-item list-group-item-action">My Jobs</a>
                 <a routerLink="/" class="list-group-item list-group-item-action">How it Works</a>
                 <a routerLink="/" class="list-group-item list-group-item-action">logout</a>
@@ -146,7 +146,7 @@
         <div class="dropdown-menu">
           <a class="dropdown-item" routerLink="/signup" >Register</a>
           <a class="dropdown-item" routerLink="/signin" >Login</a>
-             <ng-template [ngIf]="!signupService.isSuccess()">
+             <ng-template [ngIf]="signupService.isSuccess()">
           <a class="dropdown-item" routerLink="/">Profile Page</a>
           <a class="dropdown-item" routerLink="/">Orders List</a>
           <a class="dropdown-item" routerLink="/">Wishlist</a>

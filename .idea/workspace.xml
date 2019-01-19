@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3ab2dee-2429-4232-8607-0135210d63b9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/sign-in/sign-in.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/sign-up/sign-up.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/sign-up/sign-up.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/sign-up/sign-up.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/sign-up/sign-up.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/sign-up/sign-up.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/sign-up/sign-up.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/header/header.component.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -62,8 +55,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/src/app/header/header.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="119" column="65" selection-start-line="119" selection-start-column="65" selection-end-line="119" selection-end-column="65" />
+            <state relative-caret-position="126">
+              <caret line="119" column="37" lean-forward="true" selection-start-line="119" selection-start-column="37" selection-end-line="119" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -339,12 +332,12 @@
       <workItem from="1547763416071" duration="7028000" />
       <workItem from="1547788830596" duration="268000" />
       <workItem from="1547791345058" duration="5402000" />
-      <workItem from="1547852730926" duration="7894000" />
+      <workItem from="1547852730926" duration="8694000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43520000" />
+    <option name="totallyTimeSpent" value="44320000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -365,7 +358,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.33002833" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.33002833" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -555,8 +548,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/header/header.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="119" column="65" selection-start-line="119" selection-start-column="65" selection-end-line="119" selection-end-column="65" />
+        <state relative-caret-position="126">
+          <caret line="119" column="37" lean-forward="true" selection-start-line="119" selection-start-column="37" selection-end-line="119" selection-end-column="37" />
         </state>
       </provider>
     </entry>
