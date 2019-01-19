@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { SignInComponent } from './components/sign-in/sign-in.component';
-import {SignInService} from './components/sign-in/sign-in.service';
 import {AppRoutingModule} from './app-routing.module';
 import {HomeComponent} from './components/home/home.component';
 import { HeaderComponent } from './header/header.component';
@@ -36,8 +35,7 @@ import {FormsModule} from '@angular/forms';
   exports: [
     AppRoutingModule,
   ],
-  providers: [SignInService,
-              SignUpService],
+  providers: [SignUpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
