@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import {SignUpService} from './sign-up.service';
 import {isSuccess} from '@angular/http/src/http_utils';
+import {AuthService} from '../auth.service';
 
 @Component({
   selector: 'app-sign-up',
@@ -11,7 +11,7 @@ import {isSuccess} from '@angular/http/src/http_utils';
 export class SignUpComponent implements OnInit {
   public email: string;
   public password: string;
-  constructor(private signupService: SignUpService,
+  constructor(private signupService: AuthService,
               ) { }
 
   ngOnInit() {

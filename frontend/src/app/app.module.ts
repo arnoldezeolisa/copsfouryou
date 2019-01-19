@@ -7,10 +7,10 @@ import { SignInComponent } from './components/sign-in/sign-in.component';
 import {AppRoutingModule} from './app-routing.module';
 import {HomeComponent} from './components/home/home.component';
 import { HeaderComponent } from './header/header.component';
-import {SignUpService} from './components/sign-up/sign-up.service';
 import { HttpClientModule} from '@angular/common/http';
 import {HttpModule} from '@angular/http';
 import {FormsModule} from '@angular/forms';
+import {AuthService} from './components/auth.service';
 
 
 
@@ -35,7 +35,7 @@ import {FormsModule} from '@angular/forms';
   exports: [
     AppRoutingModule,
   ],
-  providers: [SignUpService],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

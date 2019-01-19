@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 
 @Injectable()
-export class SignUpService {
+export class AuthService {
   token: string;
   constructor(private router: Router,
               private http: HttpClient) {
@@ -27,7 +27,24 @@ export class SignUpService {
 
     }
 
-    getToken() {
+  /* signinUser(email: string, password: string) {
+  firebase.auth().signInWithEmailAndPassword(email, password)<- see if user name and pass in database
+    .then(
+      response => {
+        this.router.navigate(['/']);
+        firebase.auth().currentUser.getToken()
+          .then(
+            (token: string) => this.token = token
+          )
+      }
+    )
+    .catch(
+      error => console.log(error)
+    );
+}*/
+
+
+  getToken() {
       return this.token;
     }
 
