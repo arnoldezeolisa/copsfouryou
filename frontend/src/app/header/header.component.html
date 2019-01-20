@@ -133,7 +133,7 @@
                 <div class="card-img-overlay card-img-overlay-transparent d-flex justify-content-center align-items-center flex-column">
                   <h2 class="card-title text-center">New Women's Fashion</h2>
                   <h5>See what's new</h5>
-                  <a href="shop-grid.html" class="btn btn-danger rounded-pill">Shop Now</a>
+                  <a href="/" class="btn btn-danger rounded-pill">Shop Now</a>
                 </div>
               </div>
             </div>
@@ -141,15 +141,15 @@
         </div>
       </li>
       <li class="nav-item dropdown dropdown-hover">
-        <a class="nav-link dropdown-toggle forwardable" data-toggle="dropdown" href="account-profile.html" role="button" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle forwardable" data-toggle="dropdown" href="/" role="button" aria-haspopup="true" aria-expanded="false">
           Account <i data-feather="chevron-down"></i>
         </a>
 
         <div class="dropdown-menu">
           <a class="dropdown-item" routerLink="/signup" >Register</a>
           <a class="dropdown-item" routerLink="/signin" >Login</a>
-             <ng-template [ngIf]="headerService.isSuccess()">
-          <a class="dropdown-item" routerLink="/">Profile Page</a>
+          <a class="dropdown-item" routerLink="/feed">Profile Page</a>
+          <ng-template [ngIf]="headerService.isSuccess()">
           <a class="dropdown-item" routerLink="/">Orders List</a>
           <a class="dropdown-item" routerLink="/">Wishlist</a>
           <a class="dropdown-item" routerLink="/">Address</a>

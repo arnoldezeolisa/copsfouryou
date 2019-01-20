@@ -11,6 +11,7 @@ import { HttpClientModule} from '@angular/common/http';
 import {HttpModule} from '@angular/http';
 import {FormsModule} from '@angular/forms';
 import {AuthService} from './components/auth.service';
+import { FeedComponent } from './components/feed/feed.component';
 
 
 
@@ -22,7 +23,8 @@ import {AuthService} from './components/auth.service';
     SignUpComponent,
     SignInComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    FeedComponent
 
   ],
   imports: [
