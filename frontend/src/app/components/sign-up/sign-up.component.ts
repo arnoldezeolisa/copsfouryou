@@ -22,8 +22,7 @@ export class SignUpComponent implements OnInit {
       .subscribe(
         (data) => {
           console.log(data);
-           /*if isSuccess()
-            router.router('/home')*/
+
         }
       );
   }

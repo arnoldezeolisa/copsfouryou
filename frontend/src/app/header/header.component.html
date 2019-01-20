@@ -84,7 +84,7 @@
           <div class="row">
             <div class="col-lg-3">
               <div class="list-group list-group-flush list-group-no-border list-group-sm">
-              <ng-template [ngIf]="headerService.isSuccess()">
+
                 <a routerLink="/" class="list-group-item list-group-item-action"><strong>Browse by Job Type</strong></a>
                 <a routerLink="/" class="list-group-item list-group-item-action">Bar/Restaurant Jobs</a>
                 <a routerLink="/" class="list-group-item list-group-item-action">Event Security Jobs</a>
@@ -94,7 +94,7 @@
                 <a routerLink="/" class="list-group-item list-group-item-action">Bank/Money Transport Jobs</a>
                 <a routerLink="/" class="list-group-item list-group-item-action">Transport Jobs</a>
                 <a routerLink="/" class="list-group-item list-group-item-action">Other Security Jobs</a>
-                </ng-template>
+
               </div>
             </div>
             <div class="col-lg-3 border-left">
@@ -119,11 +119,11 @@
                 <a routerLink="/" class="list-group-item list-group-item-action"><strong>Options</strong></a>
                 <a routerLink="/signup" class="list-group-item list-group-item-action">register</a>
                 <a routerLink="/signin" class="list-group-item list-group-item-action">Login</a>
-                <ng-template [ngIf]="headerService.isSuccess()">
+
                 <a routerLink="/" class="list-group-item list-group-item-action">My Jobs</a>
                 <a routerLink="/" class="list-group-item list-group-item-action">How it Works</a>
                 <a routerLink="/" class="list-group-item list-group-item-action">logout</a>
-                </ng-template>
+
  
               </div>
             </div>
@@ -149,12 +149,12 @@
           <a class="dropdown-item" routerLink="/signup" >Register</a>
           <a class="dropdown-item" routerLink="/signin" >Login</a>
           <a class="dropdown-item" routerLink="/feed">Profile Page</a>
-          <ng-template [ngIf]="headerService.isSuccess()">
+          <ng-template [ngIf]="authService.isLoggedIn()">
           <a class="dropdown-item" routerLink="/">Orders List</a>
           <a class="dropdown-item" routerLink="/">Wishlist</a>
           <a class="dropdown-item" routerLink="/">Address</a>
-          <a class="dropdown-item" routerLink="/">Logout</a>
-           </ng-template>
+          <a class="dropdown-item" routerLink="/" (click)="this.Logout()">Logout</a>
+          </ng-template>
         </div>
 
       </li>
