@@ -25,7 +25,7 @@
     <ul class="nav">
       <li class="nav-item dropdown dropdown-hover">
         <a class="nav-link dropdown-toggle pr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-          <i data-feather="user"></i> Hi, John <i data-feather="chevron-down"></i>
+          <i data-feather="user"></i> Hi, (Username) <i data-feather="chevron-down"></i>
         </a>
         <div class="dropdown-menu dropdown-menu-right">
           <div class="media p-1 align-items-center mb-2">
@@ -66,13 +66,11 @@
       <li class="nav-item"><a class="nav-link active" routerLink="/">Home</a></li>
       <li class="nav-item dropd  own dropdown-hover">
         <a class="nav-link dropdown-toggle forwardable" data-toggle="dropdown" href="shop-categories.html" role="button" aria-haspopup="true" aria-expanded="false">
-          Find Freelancers <i data-feather="chevron-down"></i>
+          Post Jobs <i data-feather="chevron-down"></i>
         </a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" routerLink="/">Search Cops</a>
           <a class="dropdown-item" routerLink="/">Make a Job Post</a>
           <a class="dropdown-item" routerLink="/">My Job Posts</a>
-          <a class="dropdown-item" routerLink="/">My Messages</a>
 
         </div>
       </li>
@@ -148,7 +146,8 @@
         <div class="dropdown-menu">
           <a class="dropdown-item" routerLink="/signup" >Register</a>
           <a class="dropdown-item" routerLink="/signin" >Login</a>
-          <a class="dropdown-item" routerLink="/feed">Profile Page</a>
+          <a class="dropdown-item" routerLink="/feed">Feed</a>
+           <a class="dropdown-item" routerLink="/profile">Profile Page</a>
           <ng-template [ngIf]="authService.isLoggedIn()">
           <a class="dropdown-item" routerLink="/">Orders List</a>
           <a class="dropdown-item" routerLink="/">Wishlist</a>

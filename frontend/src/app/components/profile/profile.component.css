@@ -1,0 +1,29 @@
+.profileBox{
+  position:absolute;
+  background: whitesmoke;
+  height:350px;
+  width:100%;
+}
+.profilePic{
+  max-width:150px;
+  max-height:150px;
+}
+.userNameDsp{
+  font-size:30px;
+  color: navy;
+}
+.profileNavBar{
+
+}
+.navButtons {
+  color:black;
+  font-size:14px;
+  margin: 5 auto;
+  padding-left:5px;
+  display:inline;
+}
+.picOnPosts{
+  max-width:50px;
+  max-height:50px;
+  float:left;
+}

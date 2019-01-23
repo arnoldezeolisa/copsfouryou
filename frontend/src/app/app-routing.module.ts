@@ -4,7 +4,11 @@ import {NgModule} from '@angular/core';
 import {SignInComponent} from './components/sign-in/sign-in.component';
 import {SignUpComponent} from './components/sign-up/sign-up.component';
 import {FeedComponent} from './components/feed/feed.component';
+<<<<<<< HEAD
 import {FeedmoduleComponent} from './components/feedmodule/feedmodule.component'
+=======
+import {ProfileComponent} from './components/profile/profile.component';
+>>>>>>> cb6624ffe5e46484517165638dd754b5107de82b
 
 
 const appRoutes: Routes = [
@@ -19,7 +23,8 @@ const authRoutes: Routes = [
 ];
 
 const usrRoutes: Routes = [
-  {path: 'feed', component: FeedComponent}
+  {path: 'feed', component: FeedComponent},
+  {path: 'profile', component: ProfileComponent}
 ];
 
 @NgModule({

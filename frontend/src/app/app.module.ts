@@ -13,6 +13,7 @@ import {FormsModule} from '@angular/forms';
 import {AuthService} from './components/auth.service';
 import { FeedComponent } from './components/feed/feed.component';
 import { FeedmoduleComponent } from './components/feedmodule/feedmodule.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 
 
@@ -26,7 +27,8 @@ import { FeedmoduleComponent } from './components/feedmodule/feedmodule.componen
     HomeComponent,
     HeaderComponent,
     FeedComponent,
-    FeedmoduleComponent
+    FeedmoduleComponent,
+    ProfileComponent
 
   ],
   imports: [
