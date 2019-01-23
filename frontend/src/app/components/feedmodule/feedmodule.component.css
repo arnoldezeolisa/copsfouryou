@@ -1,0 +1,33 @@
+.cardspace{
+    margin-top:50px;
+}
+.inputsize{
+    width:50%;
+}
+
+.position{
+    display: inline-block;
+}
+.buttonclass{
+    float:right;
+    margin-top:15px;
+    width:100px;
+}
+
+.font1{
+    font-size:12px;
+}
+.font2{
+    font-size:14px;
+}
+.font2{
+    font-size:16px;
+}
+.font4{
+    font-size:18px;
+}
+
+.btnformat{
+    display:inline-block;
+    margin-left:4px;
+}

@@ -12,6 +12,7 @@ import {HttpModule} from '@angular/http';
 import {FormsModule} from '@angular/forms';
 import {AuthService} from './components/auth.service';
 import { FeedComponent } from './components/feed/feed.component';
+import { FeedmoduleComponent } from './components/feedmodule/feedmodule.component';
 
 
 
@@ -24,7 +25,8 @@ import { FeedComponent } from './components/feed/feed.component';
     SignInComponent,
     HomeComponent,
     HeaderComponent,
-    FeedComponent
+    FeedComponent,
+    FeedmoduleComponent
 
   ],
   imports: [
@@ -36,6 +38,7 @@ import { FeedComponent } from './components/feed/feed.component';
   ],
   exports: [
     AppRoutingModule,
+    FeedmoduleComponent
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

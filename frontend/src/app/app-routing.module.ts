@@ -4,6 +4,7 @@ import {NgModule} from '@angular/core';
 import {SignInComponent} from './components/sign-in/sign-in.component';
 import {SignUpComponent} from './components/sign-up/sign-up.component';
 import {FeedComponent} from './components/feed/feed.component';
+import {FeedmoduleComponent} from './components/feedmodule/feedmodule.component'
 
 
 const appRoutes: Routes = [
@@ -13,6 +14,7 @@ const appRoutes: Routes = [
 const authRoutes: Routes = [
   { path: 'signup', component:  SignUpComponent},
   { path: 'signin', component:  SignInComponent},
+  { path: 'feed', component:    FeedComponent}
 
 ];
 
