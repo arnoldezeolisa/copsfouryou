@@ -6,6 +6,8 @@ import {SignUpComponent} from './components/sign-up/sign-up.component';
 import {FeedComponent} from './components/feed/feed.component';
 import {ProfileComponent} from './components/profile/profile.component';
 import {CopDashboardComponent} from './components/cop-dashboard/cop-dashboard.component';
+import {MessagesComponent} from './components/messages/messages.component';
+import {PostJobComponent} from './components/post-job/post-job.component';
 
 
 const appRoutes: Routes = [
@@ -21,7 +23,9 @@ const authRoutes: Routes = [
 const usrRoutes: Routes = [
   {path: 'feed', component: FeedComponent},
   {path: 'profile', component: ProfileComponent},
-  {path: 'usrDashboard', component: CopDashboardComponent}
+  {path: 'usrDashboard', component: CopDashboardComponent},
+  {path: 'messages', component: MessagesComponent},
+  {path: 'postJob', component: PostJobComponent}
 ];
 
 @NgModule({
