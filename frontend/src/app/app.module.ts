@@ -17,6 +17,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { CopDashboardComponent } from './components/cop-dashboard/cop-dashboard.component';
 import { MessagesComponent } from './components/messages/messages.component';
 import { PostJobComponent } from './components/post-job/post-job.component';
+import { MessangerModuleComponent } from './components/messanger-module/messanger-module.component';
 
 
 
@@ -35,6 +36,7 @@ import { PostJobComponent } from './components/post-job/post-job.component';
     CopDashboardComponent,
     MessagesComponent,
     PostJobComponent,
+    MessangerModuleComponent,
 
   ],
   imports: [
