@@ -14,6 +14,7 @@ import {AuthService} from './components/auth.service';
 import { FeedComponent } from './components/feed/feed.component';
 import { FeedmoduleComponent } from './components/feedmodule/feedmodule.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { CopDashboardComponent } from './components/cop-dashboard/cop-dashboard.component';
 
 
 
@@ -28,7 +29,8 @@ import { ProfileComponent } from './components/profile/profile.component';
     HeaderComponent,
     FeedComponent,
     FeedmoduleComponent,
-    ProfileComponent
+    ProfileComponent,
+    CopDashboardComponent
 
   ],
   imports: [

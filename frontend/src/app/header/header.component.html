@@ -143,13 +143,13 @@
           Account <i data-feather="chevron-down"></i>
         </a>
 
-        <div class="dropdown-menu">
+        <div class="dropdown-menu" >
           <a class="dropdown-item" routerLink="/signup" >Register</a>
           <a class="dropdown-item" routerLink="/signin" >Login</a>
           <a class="dropdown-item" routerLink="/feed">Feed</a>
            <a class="dropdown-item" routerLink="/profile">Profile Page</a>
           <ng-template [ngIf]="authService.isLoggedIn()">
-          <a class="dropdown-item" routerLink="/">Orders List</a>
+          <a class="dropdown-item" routerLink="/usrDashboard">Dashboard</a>
           <a class="dropdown-item" routerLink="/">Wishlist</a>
           <a class="dropdown-item" routerLink="/">Address</a>
           <a class="dropdown-item" routerLink="/" (click)="this.Logout()">Logout</a>
