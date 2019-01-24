@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f3ab2dee-2429-4232-8607-0135210d63b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/messanger-module/messanger-module.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/messanger-module/messanger-module.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/header/header.component.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -73,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile/profile.component.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="562" selection-start-line="561" selection-end-line="591" />
+            <state relative-caret-position="50">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -82,8 +81,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/src/app/header/header.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="153" column="53" selection-start-line="153" selection-start-column="53" selection-end-line="153" selection-end-column="53" />
+            <state relative-caret-position="150">
+              <caret line="151" column="57" selection-start-line="151" selection-start-column="57" selection-end-line="151" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -121,8 +120,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/app/components/messanger-module/messanger-module.component.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="42" selection-start-column="42" selection-end-column="42" />
+            <state relative-caret-position="275">
+              <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -182,15 +181,15 @@
         <option value="$PROJECT_DIR$/frontend/src/app/components/feedmodule/feedmodule.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/cop-dashboard/cop-dashboard.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/messanger-module/messanger-module.component.css" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/messages/messages.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/messages/messages.component.css" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/messanger-module/messanger-module.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/profile/profile.component.html" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/profile/profile.component.css" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/inbox/inbox.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/inbox/inbox.component.css" />
         <option value="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/profile/profile.component.css" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/messanger-module/messanger-module.component.css" />
         <option value="$PROJECT_DIR$/frontend/src/app/header/header.component.html" />
       </list>
     </option>
@@ -253,6 +252,15 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="inbox" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="copsfouryou" type="b2602c69:ProjectViewProjectNode" />
+              <item name="copsfouryou" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="messanger-module" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="copsfouryou" type="b2602c69:ProjectViewProjectNode" />
@@ -354,12 +362,12 @@
       <workItem from="1547763416071" duration="7028000" />
       <workItem from="1547788830596" duration="268000" />
       <workItem from="1547791345058" duration="5402000" />
-      <workItem from="1547852730926" duration="62241000" />
+      <workItem from="1547852730926" duration="62852000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97867000" />
+    <option name="totallyTimeSpent" value="98478000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -609,13 +617,6 @@
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/messages/messages.component.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/messanger-module/messanger-module.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="42" selection-start-column="42" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/messanger-module/messanger-module.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -653,13 +654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile/profile.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="562" selection-start-line="561" selection-end-line="591" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/inbox/inbox.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1635">
@@ -687,10 +681,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile/profile.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/messanger-module/messanger-module.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/header/header.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="153" column="53" selection-start-line="153" selection-start-column="53" selection-end-line="153" selection-end-column="53" />
+        <state relative-caret-position="150">
+          <caret line="151" column="57" selection-start-line="151" selection-start-column="57" selection-end-line="151" selection-end-column="57" />
         </state>
       </provider>
     </entry>

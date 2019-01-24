@@ -64,7 +64,9 @@
     <!-- Main navigation -->
     <ul class="nav nav-main ml-auto d-none d-lg-flex"> <!-- hidden on md -->
       <li class="nav-item"><a class="nav-link active" routerLink="/">Home</a></li>
+      <ng-template [ngIf]="authService.isLoggedIn()">
       <li class="nav-item"><a class="nav-link disabled" routerLink="/messages">Messages</a></li>
+      </ng-template>
       <li class="nav-item drop  own dropdown-hover">
         <a class="nav-link dropdown-toggle forwardable" data-toggle="dropdown" href="shop-categories.html" role="button" aria-haspopup="true" aria-expanded="false">
           Post Jobs <i data-feather="chevron-down"></i>
@@ -147,9 +149,9 @@
         <div class="dropdown-menu" >
           <a class="dropdown-item" routerLink="/signup" >Register</a>
           <a class="dropdown-item" routerLink="/signin" >Login</a>
+          <ng-template [ngIf]="authService.isLoggedIn()">
           <a class="dropdown-item" routerLink="/feed">Feed</a>
            <a class="dropdown-item" routerLink="/profile">Profile Page</a>
-          <ng-template [ngIf]="authService.isLoggedIn()">
           <a class="dropdown-item" routerLink="/usrDashboard">Dashboard</a>
           <a class="dropdown-item" routerLink="/inbox">Inbox</a>
           <a class="dropdown-item" routerLink="/">Address</a>
