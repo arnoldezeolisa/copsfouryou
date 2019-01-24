@@ -151,7 +151,7 @@
            <a class="dropdown-item" routerLink="/profile">Profile Page</a>
           <ng-template [ngIf]="authService.isLoggedIn()">
           <a class="dropdown-item" routerLink="/usrDashboard">Dashboard</a>
-          <a class="dropdown-item" routerLink="/messages">Inbox</a>
+          <a class="dropdown-item" routerLink="/inbox">Inbox</a>
           <a class="dropdown-item" routerLink="/">Address</a>
           <a class="dropdown-item" routerLink="/" (click)="this.Logout()">Logout</a>
           </ng-template>

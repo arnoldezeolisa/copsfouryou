@@ -18,6 +18,7 @@ import { CopDashboardComponent } from './components/cop-dashboard/cop-dashboard.
 import { MessagesComponent } from './components/messages/messages.component';
 import { PostJobComponent } from './components/post-job/post-job.component';
 import { MessangerModuleComponent } from './components/messanger-module/messanger-module.component';
+import { InboxComponent } from './components/inbox/inbox.component';
 
 
 
@@ -37,6 +38,7 @@ import { MessangerModuleComponent } from './components/messanger-module/messange
     MessagesComponent,
     PostJobComponent,
     MessangerModuleComponent,
+    InboxComponent,
 
   ],
   imports: [
