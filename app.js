@@ -77,7 +77,7 @@ app.post("/register",function(req,res,next){
 
    app.post("/authenticate",function(req,res,next){
 
-        const username = req.body.email;
+        const username = req.body.username;
         const password = req.body.password;
         
         db.getUserByUsername(username, (err,user) => {
@@ -90,7 +90,7 @@ app.post("/register",function(req,res,next){
                 return res.json({success:false,msg:"User not found."});
             }else{
             
-            db.comparePassword(password, user[0].userPass,(err, isMatch)=>{
+            db.comparePassword(password, user[0].password,(err, isMatch)=>{
                 if(err) throw err;
                 if(isMatch){
                     const token = jwt.sign({data: user},'cops4you',{

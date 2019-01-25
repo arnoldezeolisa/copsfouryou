@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import {isSuccess} from '@angular/http/src/http_utils';
 import {AuthService} from '../auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sign-up',
@@ -9,22 +9,21 @@ import {AuthService} from '../auth.service';
   styleUrls: ['./sign-up.component.css']
 })
 export class SignUpComponent implements OnInit {
-  public email: string;
-  public password: string;
+  public email:string;
+  public password:string;
   constructor(private signupService: AuthService,
-              ) { }
+              private router:Router) { }
 
   ngOnInit() {
 
   }
-  onRegister(ng: NgForm) {
+  onRegister() {
+    
     this.signupService.SignupUser(this.email, this.password)
-      .subscribe(
-        (data) => {
-          console.log(data);
-
-        }
-      );
+    .subscribe(
+      (data)=>{ 
+        console.log(data)
+      });
   }
 
 }
