@@ -14,6 +14,11 @@ import {AuthService} from './components/auth.service';
 import { FeedComponent } from './components/feed/feed.component';
 import { FeedmoduleComponent } from './components/feedmodule/feedmodule.component';
 import { ProfileComponent } from './components/profile/profile.component';
+import { CopDashboardComponent } from './components/cop-dashboard/cop-dashboard.component';
+import { MessagesComponent } from './components/messages/messages.component';
+import { PostJobComponent } from './components/post-job/post-job.component';
+import { MessangerModuleComponent } from './components/messanger-module/messanger-module.component';
+import { InboxComponent } from './components/inbox/inbox.component';
 
 
 
@@ -28,7 +33,12 @@ import { ProfileComponent } from './components/profile/profile.component';
     HeaderComponent,
     FeedComponent,
     FeedmoduleComponent,
-    ProfileComponent
+    ProfileComponent,
+    CopDashboardComponent,
+    MessagesComponent,
+    PostJobComponent,
+    MessangerModuleComponent,
+    InboxComponent,
 
   ],
   imports: [

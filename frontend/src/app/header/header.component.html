@@ -64,12 +64,15 @@
     <!-- Main navigation -->
     <ul class="nav nav-main ml-auto d-none d-lg-flex"> <!-- hidden on md -->
       <li class="nav-item"><a class="nav-link active" routerLink="/">Home</a></li>
-      <li class="nav-item dropd  own dropdown-hover">
+      <ng-template [ngIf]="authService.isLoggedIn()">
+      <li class="nav-item"><a class="nav-link disabled" routerLink="/messages">Messages</a></li>
+      </ng-template>
+      <li class="nav-item drop  own dropdown-hover">
         <a class="nav-link dropdown-toggle forwardable" data-toggle="dropdown" href="shop-categories.html" role="button" aria-haspopup="true" aria-expanded="false">
           Post Jobs <i data-feather="chevron-down"></i>
         </a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" routerLink="/">Make a Job Post</a>
+          <a class="dropdown-item" routerLink="/postJob">Make a Job Post</a>
           <a class="dropdown-item" routerLink="/">My Job Posts</a>
 
         </div>
@@ -143,14 +146,14 @@
           Account <i data-feather="chevron-down"></i>
         </a>
 
-        <div class="dropdown-menu">
+        <div class="dropdown-menu" >
           <a class="dropdown-item" routerLink="/signup" >Register</a>
           <a class="dropdown-item" routerLink="/signin" >Login</a>
+          <ng-template [ngIf]="authService.isLoggedIn()">
           <a class="dropdown-item" routerLink="/feed">Feed</a>
            <a class="dropdown-item" routerLink="/profile">Profile Page</a>
-          <ng-template [ngIf]="authService.isLoggedIn()">
-          <a class="dropdown-item" routerLink="/">Orders List</a>
-          <a class="dropdown-item" routerLink="/">Wishlist</a>
+          <a class="dropdown-item" routerLink="/usrDashboard">Dashboard</a>
+          <a class="dropdown-item" routerLink="/inbox">Inbox</a>
           <a class="dropdown-item" routerLink="/">Address</a>
           <a class="dropdown-item" routerLink="/" (click)="this.Logout()">Logout</a>
           </ng-template>

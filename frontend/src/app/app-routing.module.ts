@@ -4,8 +4,11 @@ import {NgModule} from '@angular/core';
 import {SignInComponent} from './components/sign-in/sign-in.component';
 import {SignUpComponent} from './components/sign-up/sign-up.component';
 import {FeedComponent} from './components/feed/feed.component';
-import {FeedmoduleComponent} from './components/feedmodule/feedmodule.component'
 import {ProfileComponent} from './components/profile/profile.component';
+import {CopDashboardComponent} from './components/cop-dashboard/cop-dashboard.component';
+import {MessagesComponent} from './components/messages/messages.component';
+import {PostJobComponent} from './components/post-job/post-job.component';
+import {InboxComponent} from './components/inbox/inbox.component';
 
 
 const appRoutes: Routes = [
@@ -15,13 +18,16 @@ const appRoutes: Routes = [
 const authRoutes: Routes = [
   { path: 'signup', component:  SignUpComponent},
   { path: 'signin', component:  SignInComponent},
-  { path: 'feed', component:    FeedComponent}
 
 ];
 
 const usrRoutes: Routes = [
   {path: 'feed', component: FeedComponent},
-  {path: 'profile', component: ProfileComponent}
+  {path: 'profile', component: ProfileComponent},
+  {path: 'usrDashboard', component: CopDashboardComponent},
+  {path: 'inbox', component: InboxComponent},
+  {path: 'messages', component: MessagesComponent},
+  {path: 'postJob', component: PostJobComponent}
 ];
 
 @NgModule({
