@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3ab2dee-2429-4232-8607-0135210d63b9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/inbox/inbox.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/inbox/inbox.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/profile/profile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/profile/profile.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/inbox/inbox.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/inbox/inbox.component.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -21,10 +19,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile/profile.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="-1425">
               <caret line="6" column="106" selection-start-line="6" selection-start-column="106" selection-end-line="6" selection-end-column="106" />
             </state>
           </provider>
@@ -53,6 +51,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="175">
               <caret line="7" column="63" lean-forward="true" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="113" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/inbox/inbox.component.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="139" column="44" selection-start-line="139" selection-start-column="44" selection-end-line="139" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -118,7 +125,6 @@
         <option value="$PROJECT_DIR$/frontend/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/messages/messages.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/messages/messages.component.css" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/inbox/inbox.component.css" />
         <option value="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/messanger-module/messanger-module.component.css" />
         <option value="$PROJECT_DIR$/frontend/src/app/header/header.component.html" />
@@ -127,6 +133,7 @@
         <option value="$PROJECT_DIR$/frontend/src/app/components/messanger-module/messanger-module.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/inbox/inbox.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/profile/profile.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/inbox/inbox.component.css" />
       </list>
     </option>
   </component>
@@ -316,18 +323,18 @@
       <workItem from="1547763416071" duration="7028000" />
       <workItem from="1547788830596" duration="268000" />
       <workItem from="1547791345058" duration="5402000" />
-      <workItem from="1547852730926" duration="70159000" />
+      <workItem from="1547852730926" duration="70571000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105785000" />
+    <option name="totallyTimeSpent" value="106197000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.19762062" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19762062" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -342,7 +349,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" side_tool="true" weight="0.21671388" />
+      <window_info anchor="bottom" id="Terminal" order="11" side_tool="true" visible="true" weight="0.21671388" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -605,13 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/inbox/inbox.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5639">
-          <caret line="365" column="1" selection-start-line="365" selection-start-column="1" selection-end-line="365" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/messanger-module/messanger-module.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -647,6 +647,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile/profile.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1425">
+          <caret line="6" column="106" selection-start-line="6" selection-start-column="106" selection-end-line="6" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/inbox/inbox.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -654,10 +661,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/profile/profile.component.html">
+    <entry file="file://$PROJECT_DIR$/frontend/src/app/components/inbox/inbox.component.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="106" selection-start-line="6" selection-start-column="106" selection-end-line="6" selection-end-column="106" />
+        <state relative-caret-position="175">
+          <caret line="139" column="44" selection-start-line="139" selection-start-column="44" selection-end-line="139" selection-end-column="44" />
         </state>
       </provider>
     </entry>
