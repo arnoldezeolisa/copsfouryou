@@ -2,11 +2,6 @@
 
 
 
-/****** Searchable container */
-
-.title{
-  margin-left:20px
-}
 
 .fa-user{
   font-size:80px
@@ -312,8 +307,7 @@ form .form-group {
 
 
 
-/*font Awesome http://fontawesome.io*/
-@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+
 /*Comment List styles*/
 .comment-list .row {
   margin-bottom: 0px;
@@ -392,15 +386,6 @@ form .form-group {
 }
 
 
-
-
-
-
-
-/**** resumee ****/
-
-/* uses font awesome for social icons */
-@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
 
 .page-header{
   text-align: center;
