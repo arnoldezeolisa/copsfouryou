@@ -22,7 +22,7 @@ export class SignInComponent implements OnInit {
         (data) => {
           if(data["success"]) {
             this.signinService.storeToken(data["token"])
-            this.router.navigate(["/"]);
+            this.router.navigate(["/profile"]);
           } else{
             console.log(data)
           }

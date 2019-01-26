@@ -8,7 +8,7 @@ import {ProfileComponent} from './components/profile/profile.component';
 import {CopDashboardComponent} from './components/cop-dashboard/cop-dashboard.component';
 import {MessagesComponent} from './components/messages/messages.component';
 import {PostJobComponent} from './components/post-job/post-job.component';
-import {InboxComponent} from './components/inbox/inbox.component';
+import {NotificationComponent} from './components/notification/notification.component';
 
 
 const appRoutes: Routes = [
@@ -25,7 +25,7 @@ const usrRoutes: Routes = [
   {path: 'feed', component: FeedComponent},
   {path: 'profile', component: ProfileComponent},
   {path: 'usrDashboard', component: CopDashboardComponent},
-  {path: 'inbox', component: InboxComponent},
+  {path: 'notification', component: NotificationComponent},
   {path: 'messages', component: MessagesComponent},
   {path: 'postJob', component: PostJobComponent}
 ];
