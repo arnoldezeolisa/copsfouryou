@@ -7,7 +7,7 @@ import {NgForm} from '@angular/forms';
   styleUrls: ['./messanger-module.component.css']
 })
 export class MessangerModuleComponent implements OnInit {
-  @ViewChild('f') messageForm: NgForm;
+  @ViewChild('f') messageForm: NgForm; /*fetches data from form fields*/
   messageVar = {
     messageContent: '',
   };
@@ -20,6 +20,7 @@ export class MessangerModuleComponent implements OnInit {
     console.log(this.messageForm.value);*/
     this.submitted = true;
     this.messageVar.messageContent = this.messageForm.value.myMessage;
+    this.messageForm.reset();
   }
   constructor() { }
 
