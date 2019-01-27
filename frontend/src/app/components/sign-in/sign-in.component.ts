@@ -10,7 +10,7 @@ import {Router} from '@angular/router';
 })
 export class SignInComponent implements OnInit {
   constructor(private signinService: AuthService,
-                  private router: Router) { }
+              private router: Router) { }
 
   ngOnInit() {
   }
@@ -32,5 +32,5 @@ export class SignInComponent implements OnInit {
 
 
 
-  }
+}
 

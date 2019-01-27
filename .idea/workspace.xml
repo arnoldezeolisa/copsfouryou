@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3ab2dee-2429-4232-8607-0135210d63b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/message.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/messanger-module/messenger-module.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/messanger-module/messenger-module.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/messages/messages.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/messages/messages.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/messanger-module/messanger-module.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/messanger-module/messenger-module.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/messanger-module/messanger-module.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/messanger-module/messanger-module.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/sign-in/sign-in.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/sign-in/sign-in.component.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/dist/" />
@@ -27,23 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/src/app/components/messanger-module/messenger-module.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
+            <state relative-caret-position="111">
               <caret line="103" column="5" selection-start-line="103" selection-start-column="5" selection-end-line="103" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/messanger-module/messenger-edit/messenger-edit.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-              <folding>
-                <element signature="e#301#371#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -83,6 +63,18 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-128">
               <caret line="5" column="27" selection-end-line="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/src/app/components/sign-in/sign-in.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="867">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -189,7 +181,6 @@
         <option value="$PROJECT_DIR$/frontend/src/app/components/cop-dashboard/cop-dashboard.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/inbox/inbox.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/inbox/inbox.component.css" />
-        <option value="$PROJECT_DIR$/frontend/src/app/components/sign-in/sign-in.component.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/header/header.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/notification/notification.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/notification/notification.component.css" />
@@ -209,6 +200,7 @@
         <option value="$PROJECT_DIR$/frontend/src/app/components/messanger-module/messenger-edit/messenger-edit.component.html" />
         <option value="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/frontend/src/app/components/messanger-module/messenger-module.component.html" />
+        <option value="$PROJECT_DIR$/frontend/src/app/components/sign-in/sign-in.component.ts" />
       </list>
     </option>
   </component>
@@ -406,7 +398,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146307000" />
+    <option name="totallyTimeSpent" value="146387000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -644,7 +636,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/sign-in/sign-in.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
+        <state relative-caret-position="867">
           <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
@@ -763,7 +755,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/src/app/components/messanger-module/messenger-module.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
+        <state relative-caret-position="111">
           <caret line="103" column="5" selection-start-line="103" selection-start-column="5" selection-end-line="103" selection-end-column="32" />
         </state>
       </provider>
