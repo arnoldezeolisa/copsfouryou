@@ -17,8 +17,10 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { CopDashboardComponent } from './components/cop-dashboard/cop-dashboard.component';
 import { MessagesComponent } from './components/messages/messages.component';
 import { PostJobComponent } from './components/post-job/post-job.component';
-import { MessangerModuleComponent } from './components/messanger-module/messanger-module.component';
+import { MessengerModuleComponent } from './components/messanger-module/messenger-module.component';
 import { NotificationComponent } from './components/notification/notification.component';
+import {MessageService} from './components/message.service';
+import { MessengerEditComponent } from './components/messanger-module/messenger-edit/messenger-edit.component';
 
 
 
@@ -38,8 +40,10 @@ import { NotificationComponent } from './components/notification/notification.co
     CopDashboardComponent,
     MessagesComponent,
     PostJobComponent,
-    MessangerModuleComponent,
+    MessengerModuleComponent,
     NotificationComponent,
+    MessengerEditComponent,
+
 
   ],
   imports: [
@@ -53,7 +57,8 @@ import { NotificationComponent } from './components/notification/notification.co
     AppRoutingModule,
     FeedmoduleComponent
   ],
-  providers: [AuthService],
+  providers: [AuthService,
+                MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

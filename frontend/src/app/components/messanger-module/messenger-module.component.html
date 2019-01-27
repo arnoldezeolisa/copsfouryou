@@ -1,10 +1,5 @@
 
-
-
-
-<html>
-
-<body>
+<div>
 <div class="container">
 <div class="messaging">
       <div class="inbox_msg">
@@ -104,41 +99,21 @@
             </div>
 
 
-  <div class="received_msg" *ngIf="submitted">
+
     <div
-      class="received_withd_msg">
-       <p>{{ messageVar.messageContent  }}</p>
+      class="received_withd_msg"
+      *ngFor="let message of messages; let i = index"
+              (click)="onEditItem(i)">{{ message.message }}
+
           <span class="time_date"> 8:28 PM    |    January 24</span></div>
       </div>
 
 
 
+  <app-messenger-edit></app-messenger-edit>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
 
-          </div>
-     <form (ngSubmit)="onSubmit()" #f="ngForm">
-          <div class="type_msg">
-            <div class="input_msg_write">
-              <input
-              type="text"
-              class="write_msg"
-              placeholder="Type a message"
-              ngModel
-              name="myMessage">
-              <button class="msg_send_btn"
-              type="submit"
-              >
-              <i class="fa fa-paper-plane-o" aria-hidden="true"></i>Go</button>
-            </div>
-          </div>
-      </form>
-        </div>
-      </div>
-
-
-
-
-
-
-    </div></div>
-    </body>
-    </html>
