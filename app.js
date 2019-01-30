@@ -123,20 +123,25 @@ app.get('*', function (req, res) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 process.env.PORT = 8080;//process.env.PORT || 8080;
 
 app.listen(process.env.PORT,process.env.IP,function(){
     console.log("The Cops4You server has started on port " + process.env.PORT);
 });
+
+//starting socket
+var socket = require('socket.io');
+
+//apps set up
+var server = app.listen(8080, function(){
+    console.log('listening to requests on port 8080');
+});
+
+
+
+//socket setup
+var io = socket(server);
+
+io.on('connection', function(socket) {
+    console.log('made socket connection')
+})

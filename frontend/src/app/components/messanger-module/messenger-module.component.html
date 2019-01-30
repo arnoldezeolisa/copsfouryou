@@ -1,4 +1,5 @@
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js"></script>
+<sript src="/chat.js"></sript>
 <div>
 <div class="container">
 <div class="messaging">
@@ -102,6 +103,7 @@
 
     <div
       class="received_withd_msg"
+      id="output"
       *ngFor="let message of messages; let i = index"
               (click)="onEditItem(i)">{{ message.message }}
 
