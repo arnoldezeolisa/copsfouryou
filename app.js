@@ -6,6 +6,8 @@ const cors = require('cors');
 const passport = require('passport');
 const path = require('path');
 const db = require("./config/db");
+let http = require('http').Server(app);
+
 
 
 //app.set("view engine","ejs");
@@ -122,6 +124,33 @@ app.get('*', function (req, res) {
 
 
 
+var server = require('http').createServer(app)
+ var   io = require('socket.io',{transports: ['websocket']})(server, { origins: '*:*'}).listen(server)
+ //io.set('origins', 'http://localhost:4200/messages');
+server.listen(3000);
+
+
+
+//starting socket
+
+io.on('connection', (socket) => {
+
+    // Log whenever a user connects
+    console.log('user connected');
+
+    // Log whenever a client disconnects from our websocket server
+    socket.on('disconnect', function(){
+        console.log('user disconnected');
+    });
+
+    // When we receive a 'message' event from our client, print out
+    // the contents of that message and then echo it back to our client
+    // using `io.emit()`
+    socket.on('message', (message) => {
+        console.log("Message Received: " + message);
+        io.emit('message', {type:'new-message', text: message});    
+    });
+});
 
 process.env.PORT = 8080;//process.env.PORT || 8080;
 
@@ -129,19 +158,3 @@ app.listen(process.env.PORT,process.env.IP,function(){
     console.log("The Cops4You server has started on port " + process.env.PORT);
 });
 
-//starting socket
-var socket = require('socket.io');
-
-//apps set up
-var server = app.listen(8080, function(){
-    console.log('listening to requests on port 8080');
-});
-
-
-
-//socket setup
-var io = socket(server);
-
-io.on('connection', function(socket) {
-    console.log('made socket connection')
-})

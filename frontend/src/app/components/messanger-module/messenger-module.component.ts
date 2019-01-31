@@ -2,6 +2,7 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import { Subscription } from 'rxjs/Subscription';
 import {MessageService} from '../message.service';
 import {Message} from '../message.model';
+import { ChatServiceService } from '../chat-service.service';
 
 @Component({
   selector: 'app-messenger-module',
@@ -12,10 +13,12 @@ export class MessengerModuleComponent implements OnInit, OnDestroy {
   messages: Message[];
   private subscription: Subscription;
 
-  constructor(private msgService: MessageService) {
+  constructor(private msgService: MessageService,
+              private chat: ChatServiceService) {
   }
 
   ngOnInit() {
+
     this.messages = this.msgService.getMessages();
     this.subscription = this.msgService.messageAdded
       .subscribe(

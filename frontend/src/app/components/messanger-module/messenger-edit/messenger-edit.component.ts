@@ -5,6 +5,7 @@ import {NgForm} from '@angular/forms';
 import {Subscription} from 'rxjs';
 import {MessageService} from '../../message.service';
 import {Message} from '../../message.model';
+import { ChatServiceService } from '../../chat-service.service';
 
 @Component({
   selector: 'app-messenger-edit',
@@ -12,11 +13,12 @@ import {Message} from '../../message.model';
   styleUrls: ['./messenger-edit.component.css']
 })
 export class MessengerEditComponent implements OnInit, OnDestroy {
-  @ViewChild('f') messageForm: NgForm; /*fetches data from form fields*/
+  //@ViewChild('f') messageForm: NgForm; /*fetches data from form fields*/
   subscription: Subscription;
   editMode = false;
   editedItemIndex: number;
   editedItem: Message;
+  msg:String;
   /* messageVar = {
      messageContent: '',
    };
@@ -26,9 +28,14 @@ export class MessengerEditComponent implements OnInit, OnDestroy {
 
 
 
-  constructor(private msgService: MessageService) { }
+  constructor(private msgService: MessageService,
+              private chat:ChatServiceService) { }
 
   ngOnInit() {
+    this.chat.messages.subscribe(msg => {
+      console.log(msg);
+    })
+    /*
     this.subscription = this.msgService.startedEditing
       .subscribe(
         (index: number) => {
@@ -39,7 +46,10 @@ export class MessengerEditComponent implements OnInit, OnDestroy {
             message: this.editedItem.message,
           })
         }
-      );
+      );*/
+  }
+  sendMessage() {
+    this.chat.sendMsg(this.msg);
   }
 
   /*  onSubmit() {
@@ -64,7 +74,7 @@ export class MessengerEditComponent implements OnInit, OnDestroy {
   }
 
   onClear() {
-    this.messageForm.reset();
+    //this.messageForm.reset();
     this.editMode = false;
   }
 
