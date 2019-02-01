@@ -103,8 +103,8 @@
     <div
       class="received_withd_msg"
       id="output"
-      *ngFor="let message of messages; let i = index"
-              (click)="onEditItem(i)">{{ message.message }}
+      *ngFor="let message of messagesArray; let i = index"
+              (click)="onEditItem(i)">{{ message }}
 
           <span class="time_date"> 8:28 PM    |    January 24</span></div>
       </div>

@@ -12,11 +12,33 @@ import { ChatServiceService } from '../chat-service.service';
 export class MessengerModuleComponent implements OnInit, OnDestroy {
   messages: Message[];
   private subscription: Subscription;
+  messagesArray = [];
+ 
+  editMode = false;
+  editedItemIndex: number;
+  editedItem: Message;
+  msg:String;
+  /* messageVar = {
+     messageContent: '',
+   };
+
+   submitted = false;*/
+
+
+
 
   constructor(private msgService: MessageService,
-              private chat: ChatServiceService) {
+              private chat:ChatServiceService) { }
+
+  ngOnInit() {
+    this.chat.messages.subscribe(msg => {
+      console.log(msg);
+      this.messagesArray.push(msg)
+    })
   }
 
+  
+/*
   ngOnInit() {
 
     this.messages = this.msgService.getMessages();
@@ -27,7 +49,7 @@ export class MessengerModuleComponent implements OnInit, OnDestroy {
         }
       );
   }
-
+*/
   onEditItem(index: number) {
     this.msgService.startedEditing.next(index);
   }
