@@ -110,29 +110,6 @@ server.listen(3000);
 
 //starting socket
 
-<<<<<<< HEAD
-io.on('connection', (socket) => {
-
-    // Log whenever a user connects
-    console.log('user connected');
-
-    // Log whenever a client disconnects from our websocket server
-    socket.on('disconnect', function(){
-        console.log('user disconnected');
-    });
-
-    // When we receive a 'message' event from our client, print out
-    // the contents of that message and then echo it back to our client
-    // using `io.emit()`
-    socket.on('message', (message) => {
-        console.log("Message Received: " + message);
-        socket.join('some room')
-        //io.to('some room').emit({type:'new-message', text: message});
-        //socket.broadcast.to(socketid).emit('message', 'for your eyes only');
-        //console.log(socketid);
-        io.emit('message',  message);    
-    });
-=======
 io.on("connection", socket => {
   // Log whenever a user connects
   console.log("user connected");
@@ -152,7 +129,6 @@ io.on("connection", socket => {
 
     io.emit("message", message);
   });
->>>>>>> 1845110ecf9b299295911e9c056cbdd104888d67
 });
 
 process.env.PORT = 8080; //process.env.PORT || 8080;
