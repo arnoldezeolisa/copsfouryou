@@ -150,7 +150,8 @@ io.on('connection', (socket) => {
         console.log("Message Received: " + message);
         socket.join('some room')
         //io.to('some room').emit({type:'new-message', text: message});
-
+        //socket.broadcast.to(socketid).emit('message', 'for your eyes only');
+        //console.log(socketid);
         io.emit('message',  message);    
     });
 });
