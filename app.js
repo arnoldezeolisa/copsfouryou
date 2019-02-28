@@ -122,9 +122,21 @@ io.on("connection", socket => {
   // When we receive a 'message' event from our client, print out
   // the contents of that message and then echo it back to our client
   // using `io.emit()`
-  socket.on("message", message => {
+  socket.on("message", message, username, recipient => {
     console.log("Message Received: " + message);
+    //On connect --> find all rooms user is member to // query on username
+    //Only one message per conversation - find one unique message
+    //For Loop on below socket.join("each collected socketid")
+    db.findChatRooms(username, (err, isMatch) => {
+      if (err) {
+        console.log(err);
+      } else {
+        //either have array of rows or have null
+      }
+    });
     socket.join("some room");
+    //If no ID is present, take socket.id for this connection and start conversation
+    //Store as first message, and uses that socket.id
     var sessionid = socket.id;
     console.log(sessionid);
     //io.to('some room').emit({type:'new-message', text: message});
