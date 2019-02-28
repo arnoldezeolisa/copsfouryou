@@ -139,6 +139,7 @@ io.on("connection", socket => {
     //Store as first message, and uses that socket.id
     var sessionid = socket.id;
     console.log(sessionid);
+    console.log(Date.now());
     //io.to('some room').emit({type:'new-message', text: message});
 
     io.emit("message", message);
