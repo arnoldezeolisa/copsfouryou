@@ -127,6 +127,7 @@ io.on("connection", socket => {
     socket.join("some room");
     var sessionid = socket.id;
     console.log(sessionid);
+    console.log(Date.now());
     //io.to('some room').emit({type:'new-message', text: message});
 
     io.emit("message", message);
