@@ -127,13 +127,34 @@ io.on("connection", socket => {
     //On connect --> find all rooms user is member to // query on username
     //Only one message per conversation - find one unique message
     //For Loop on below socket.join("each collected socketid")
+    var chatrooms;
     db.findChatRooms(username, (err, isMatch) => {
       if (err) {
         console.log(err);
       } else {
         //either have array of rows or have null
+        if (isMatch === null) {
+          console.log("Making new chatroom with: " + socket.id);
+          db.newChatRoom(
+            username,
+            recipient,
+            message,
+            socket.id,
+            (err, isMatch) => {
+              if (err) {
+                console.log(err);
+              } else {
+                console.log("New chatroom success.");
+                chatrooms = socket.id;
+              }
+            }
+          );
+        } else {
+          chatrooms = isMatch;
+        }
       }
     });
+    for (var i = 0; i < chatrooms.length; i++) {}
     socket.join("some room");
     //If no ID is present, take socket.id for this connection and start conversation
     //Store as first message, and uses that socket.id

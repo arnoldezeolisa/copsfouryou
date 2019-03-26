@@ -1,31 +1,30 @@
 <div class="row">
   <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
-   <form (ngSubmit)="onRegister(f)" #f="ngForm">
+    <form (ngSubmit)="onRegister(f)" #f="ngForm">
       <div class="form-group">
         <label for="email">Mail</label>
-        <input type="email"
-        id="email"
-         name="email"
-         [(ngModel)]="email"
-         ngModel
+        <input
+          type="email"
+          id="email"
+          name="email"
+          [(ngModel)]="email"
+          ngModel
           class="form-control"
           required=""
           email
-          >
-                                              </div>
-                                    <div class="form-group">
+        />
+      </div>
+      <div class="form-group">
         <label for="password">Password</label>
         <input
           type="password"
           id="password"
           name="password"
           [(ngModel)]="password"
-          class="form-control">
+          class="form-control"
+        />
       </div>
-      <button class="btn btn-primary"
-       type="submit"
-        [disabled]="!f.valid">Sign Up</button>
+      <button class="btn btn-primary" type="submit">Sign Up</button>
     </form>
   </div>
 </div>
-

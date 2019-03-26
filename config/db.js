@@ -62,9 +62,11 @@ module.exports.getUserByUsername = function(username, callback) {
 module.exports.findChatRooms = function(username, callback) {
   console.log("got here");
   const usernamequery =
-    "SELECT * FROM (SELECT DISTINCT socketID FROM message_table WHERE userName='" +
+    "SELECT DISTINCT socketID FROM message_table WHERE userName='" +
     username +
-    ")'";
+    "' OR recipient='" +
+    username +
+    "'";
 
   console.log(usernamequery);
 
