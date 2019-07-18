@@ -21,6 +21,7 @@ import { MessengerModuleComponent } from './components/messanger-module/messenge
 import { NotificationComponent } from './components/notification/notification.component';
 import {MessageService} from './components/message.service';
 import { MessengerEditComponent } from './components/messanger-module/messenger-edit/messenger-edit.component';
+import { ProfileEditComponent } from './components/profile/profile-edit/profile-edit.component';
 
 
 
@@ -43,6 +44,7 @@ import { MessengerEditComponent } from './components/messanger-module/messenger-
     MessengerModuleComponent,
     NotificationComponent,
     MessengerEditComponent,
+    ProfileEditComponent,
 
 
   ],

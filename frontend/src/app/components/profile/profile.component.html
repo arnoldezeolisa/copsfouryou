@@ -103,15 +103,53 @@
                </div>
                <div class="bs-callout bs-callout-danger">
                   <h4>Biography</h4>
-                  <p>Just a cop trying to do his job</p>
+                  <div class="jumbotron"id="input" contenteditable> write your biography here
+
+                  <div class="row">
+                    <div class="col-xs-10">
+                      <app-profile-edit></app-profile-edit>
+                      <hr>
+                      <ul class="list-group">
+                        <a
+                          class="list-group-item"
+                          style="cursor: pointer"
+                          *ngFor="let profile of profiles; let i = index"
+                          (click)="onEditItem(i)"
+                        >
+                          {{ profile.name }} ({{ profile.amount }})
+                        </a>
+                      </ul>
+                    </div>
+                  </div>
+
+                  </div>
 
                </div>
                <div class="bs-callout bs-callout-danger">
                   <h4>Years On the Job</h4>
-                       <p>14 Years</p>
+                       <div class="in" id="input" contenteditable> write your years here
+
+                       <div class="row">
+                         <div class="col-xs-10">
+                           <app-profile-edit></app-profile-edit>
+                           <hr>
+                           <ul class="list-group">
+                             <a
+                               class="list-group-item"
+                               style="cursor: pointer"
+                               *ngFor="let profile of profiles; let i = index"
+                               (click)="onEditItem(i)"
+                             >
+                               {{ profile.name }} ({{ profile.amount }})
+                             </a>
+                           </ul>
+                         </div>
+                       </div>
+
+                       </div>
                </div>
                <div class="bs-callout bs-callout-danger">
-                  <h4>Prior Experiences</h4>
+                  <h4>Prior Experiefdafdnces</h4>
                   <ul class="list-group">
                      <a class="list-group-item inactive-link" routerLink="/">
                         <h4 class="list-group-item-heading">
@@ -126,14 +164,22 @@
                         <p class="list-group-item-text">
                            King of diamonds
                         </p>
-                        <ul>
-                           <li>
-                              In charge of all security
-                           </li>
-                           <li>
-                              Kicking People out
-                           </li>
-                        </ul>
+                      <div class="row">
+                        <div class="col-xs-10">
+                          <app-profile-edit></app-profile-edit>
+                          <hr>
+                          <ul class="list-group">
+                            <a
+                              class="list-group-item"
+                              style="cursor: pointer"
+                              *ngFor="let profile of profiles; let i = index"
+                              (click)="onEditItem(i)"
+                            >
+                              {{ profile.name }} ({{ profile.amount }})
+                            </a>
+                          </ul>
+                        </div>
+                      </div>
                         <p></p>
                      </a>
                   </ul>
@@ -170,5 +216,22 @@
 
     </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
