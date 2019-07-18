@@ -1,19 +1,17 @@
-import { Injectable } from '@angular/core';
+import { Injectable } from "@angular/core";
 import { Profile } from "./profile.model";
 import { Subject } from "rxjs/Subject";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root"
 })
 export class ProfileService {
   profileChanged = new Subject<Profile[]>();
   startedEditing = new Subject<number>();
-  private profiles: Profile[] = [
-    new Profile('Welcome to Arnolds Page', 26),
-
-  ];
+  private profiles: Profile[] = [new Profile("Welcome to Arnolds Page", 26)];
 
   getProfiles() {
+    console.log("test");
     return this.profiles.slice();
   }
 
