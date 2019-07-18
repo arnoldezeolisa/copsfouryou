@@ -1,36 +1,46 @@
- import { Component, OnInit, OnDestroy } from '@angular/core';
- import { Subscription } from 'rxjs/Subscription';
+import { Component, OnInit, OnDestroy } from "@angular/core";
+import { Subscription } from "rxjs/Subscription";
 
- import { Profile } from "./profile.model";
- import {ProfileService } from "./profile.service";
+import { Profile } from "./profile.model";
+import { ProfileService } from "./profile.service";
 
- @Component({
-  selector: 'app-profile',
-  templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.css']
+@Component({
+  selector: "app-profile",
+  templateUrl: "./profile.component.html",
+  styleUrls: ["./profile.component.css"]
 })
 export class ProfileComponent implements OnInit, OnDestroy {
-   profiles: Profile[];
-   private subscription: Subscription;
+  profiles: Profile[];
+  private subscription: Subscription;
+  private firstName: String;
 
-  constructor(private  prService: ProfileService) { }
+  constructor(private profileService: ProfileService) {}
 
-   ngOnInit() {
-     this.profiles = this.prService.getProfiles();
-     this.subscription = this.prService.profileChanged
+  ngOnInit() {
+    this.loadAllProfileData();
+    /*
+     this.profiles = this.profielService.getProfiles();
+     this.subscription = this.profileService.profileChanged
        .subscribe(
          (ingredients: Profile[]) => {
            this.profiles = ingredients;
          }
-       );
-   }
+       );*/
+  }
 
+  loadAllProfileData() {
+    this.profileService.loadAllProfileData().subscribe(data => {
+      console.log("profile data: ", data);
 
- onEditItem(index: number) {
-   this.prService.startedEditing.next(index);
- }
+      this.firstName = data["firstName"];
+    });
+  }
 
- ngOnDestroy() {
-   this.subscription.unsubscribe();
- }
- }
+  onEditItem(index: number) {
+    this.profileService.startedEditing.next(index);
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
+  }
+}
